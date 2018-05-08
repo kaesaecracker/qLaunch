@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>..\bin\Debug\netcoreapp2.0\</OutputPath>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <OutputPath>..\bin\Release\netcoreapp2.0\</OutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="0.6.1"/>
+        <PackageReference Include="log4net" Version="2.0.8"/>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Library\Library.csproj"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="commandline, Version=2.0.275.0, Culture=neutral, PublicKeyToken=de6f01bd326f8c32">
+            <HintPath>..\..\..\.nuget\packages\commandlineparser\2.2.1\lib\netstandard1.5\CommandLine.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+# Binary files
+bin/
+CLI/obj/
+Library/obj
+Starter/obj
+UI/obj
+
+# IDE-Specific
+.idea/
+**.user
